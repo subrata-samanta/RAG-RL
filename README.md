@@ -1,25 +1,25 @@
-# RAG-RL: Reinforcement Learning Enhanced Retrieval-Augmented Generation
+# 🚀 RAG-RL: Reinforcement Learning Enhanced Retrieval-Augmented Generation
 
 This project implements a Reinforcement Learning (RL) enhanced Retrieval-Augmented Generation (RAG) system that optimizes document retrieval for question answering tasks.
 
-## Overview
+## 📋 Overview
 
 The system combines:
-- RAG (Retrieval-Augmented Generation) for context-aware responses
-- Reinforcement Learning for optimizing document retrieval
-- BERT-based reward modeling for semantic similarity
-- Policy gradient methods for learning optimal retrieval strategies
+- 🔍 RAG (Retrieval-Augmented Generation) for context-aware responses
+- 🧠 Reinforcement Learning for optimizing document retrieval
+- 🤖 BERT-based reward modeling for semantic similarity
+- 📈 Policy gradient methods for learning optimal retrieval strategies
 
-## Features
+## ⭐ Features
 
-- Custom PolicyNetwork for document re-ranking
-- FAISS vector store for efficient document retrieval
-- HuggingFace embeddings (all-MiniLM-L6-v2)
-- Groq LLM integration (llama-3.3-70b-versatile)
-- Reward calculation based on semantic similarity and document diversity
-- Policy gradient training with experience replay
+- 🎯 Custom PolicyNetwork for document re-ranking
+- 💨 FAISS vector store for efficient document retrieval
+- 🔤 HuggingFace embeddings (all-MiniLM-L6-v2)
+- 🌐 Groq LLM integration (llama-3.3-70b-versatile)
+- 🎭 Reward calculation based on semantic similarity and document diversity
+- 📚 Policy gradient training with experience replay
 
-## Requirements
+## 🛠️ Requirements
 
 ```
 torch
@@ -30,7 +30,7 @@ transformers
 langchain_groq
 ```
 
-## Installation
+## 📦 Installation
 
 1. Clone the repository
 2. Install the required packages:
@@ -42,7 +42,7 @@ pip install torch numpy langchain faiss-cpu transformers langchain_groq
 export GROQ_API_KEY='your-api-key'
 ```
 
-## Usage
+## 💻 Usage
 
 1. Initialize the RAG-RL system:
 ```python
@@ -62,18 +62,18 @@ test_query = "Your question here?"
 documents = rag_system.retriever.get_relevant_documents(test_query)
 ```
 
-## Architecture
+## 🏗️ Architecture
 
 - **PolicyNetwork**: Neural network that learns to score and rank documents
 - **RLRAGSystem**: Main class that integrates:
-  - Document loading and chunking
-  - Embedding generation
-  - Document retrieval
-  - Policy-based learning
-  - Reward calculation
-  - LLM integration
+  - 📝 Document loading and chunking
+  - 🔢 Embedding generation
+  - 🔍 Document retrieval
+  - 🎯 Policy-based learning
+  - ⚖️ Reward calculation
+  - 🤖 LLM integration
 
-## Training Process
+## 🎓 Training Process
 
 The system learns through:
 1. Initial document retrieval using FAISS
@@ -83,10 +83,10 @@ The system learns through:
 5. Computing rewards based on answer quality and diversity
 6. Updating the policy network using policy gradients
 
-## License
+## 📄 License
 
 MIT License
 
-## Contributing
+## 🤝 Contributing
 
 Feel free to open issues and pull requests for improvements!
